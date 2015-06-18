@@ -3,6 +3,7 @@
 ## The first of the pair, makeCacheMatrix, constructs
 ## a wrapper object that can hold a matrix and cache
 ## its inverse.
+##
 ## The second function is used to get the cached inverse
 ## of the matrix in the object created with the first
 ## function. If an inverse value in not yet cached, it is
@@ -44,7 +45,7 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set, get = get, setinv = setinv, getinv = getinv);
 }
 
-
+# Function 2:
 # Takes a wrapper object created by makeCacheMatrix()
 # as an argument and returns the inverse of the matrix 
 # within that object. If a cached inverse is not found,
